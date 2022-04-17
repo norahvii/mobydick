@@ -2,12 +2,13 @@ import collections
 import re
 
 # Create a list for all the stop words and not new lines / commented lines
-stop_words_file = open('stop-words.txt').read().lower()
-stop_words_list = []
+stop_words = []
+valid = re.compile(r'^\b[a-z]+\b')
 
-for line in stop_words_file.split('\n'):
-    if line and not line.startswith("#") and not line.startswith(' '):
-        stop_words_list.append(line)
+with open('stop-words.txt', 'r') as text_file:
+    for line in text_file.read().lower().splitlines():
+        if valid.match(line) != None:
+            stop_words.append(line)
 
 # Create a list for all the iterables in the book
 book = re.findall(r'\w+',open('mobydick.txt').read().lower())
@@ -16,7 +17,7 @@ book = re.findall(r'\w+',open('mobydick.txt').read().lower())
 filtered_book = []
 
 for elem in book:
-    if elem not in stop_words_list:
+    if elem not in stop_words:
         filtered_book.append(elem)
 
 # List the most common words in the filtered book
