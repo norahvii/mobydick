@@ -1,3 +1,7 @@
+## 🌊⛵ Moby Dick Project ⚓🐋
+
+Aye, ahoy! One of the jobs I applied for asked your own Norah Vii to write a wee script that finds the top 100 words in Moby Dick, save the stop words. Don ye eyes on this dick-filtering machine! The top word is "whale"!
+
 ## Project Details:
 
 Pick any programming language of your choice and test-drive creating a list of the top 100 most frequently occurring words (excluding stop words) paired with the count of occurrences of the word, found in the attached text for Herman Melville's book Moby Dick. include a UI element.
