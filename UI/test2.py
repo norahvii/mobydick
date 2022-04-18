@@ -1,14 +1,20 @@
 import PySimpleGUI as sg
 
-sg.theme('Dark Grey 13')
+def ChatBot():
+    layout = [[(sg.Text('This is where standard out is being routed', size=[40, 1]))],
+              [sg.Output(size=(80, 20))],
+              [sg.Multiline(size=(70, 5), enter_submits=True),
+               sg.Button('SEND', button_color=(sg.YELLOWS[0], sg.BLUES[0])),
+               sg.Button('EXIT', button_color=(sg.YELLOWS[0], sg.GREENS[0]))]]
 
-layout = [[sg.Text('Filename')],
-          [sg.Input(), sg.FileBrowse()],
-          [sg.OK(), sg.Cancel()]]
+    window = sg.Window('Chat Window', layout, default_element_size=(30, 2))
 
-
-
-window = sg.Window('Get filename example', layout)
-
-event, values = window.read()
-windowclose()
+    # ---===--- Loop taking in user input and using it to query HowDoI web oracle --- #
+    while True:
+        event, value = window.read()
+        if event == 'SEND':
+            print(value)
+        else:
+            break
+    window.close()
+ChatBot()

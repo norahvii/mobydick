@@ -9,8 +9,8 @@ stop_path = input()
 
 # Create a list for all the iterables in the book
 book = re.findall(r'\w+', open(book_path, 'r',
-                                encoding='utf8', errors='ignore')
-                               .read().lower())
+                               encoding='utf8', errors='ignore')
+                              .read().lower())
 
 # Create a list for all stop words
 stop_words = []
