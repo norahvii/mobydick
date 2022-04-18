@@ -1,8 +1,10 @@
 # Project as a hard coded script that asks for input
 import collections
-import os
+import re
 
+print('Add book:')
 book_path = input()
+print('Add stop list:')
 stop_path = input()
 
 # Create a list for all the iterables in the book
