@@ -3,7 +3,7 @@ import collections
 import re
 
 # Create a list for all the iterables in the book
-book = re.findall(r'\w+', open('mobydick.txt', 'r',
+book = re.findall(r'\w+', open('mob4ydick.txt', 'r',
                                 encoding='utf8', errors='ignore')
                                .read().lower())
 

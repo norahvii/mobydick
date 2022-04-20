@@ -46,7 +46,13 @@ while True:
     if event == 'Run':
         book_path = str(values['input_book'])
         stop_path = str(values['input_stop'])
-        bookfilter()
+        if book_path and stop_path != '':
+            try:
+                bookfilter()
+            except FileNotFoundError:
+                pass
+        else:
+            pass
     else:
         break
 
