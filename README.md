@@ -14,4 +14,8 @@ Please share your code, including a README, by pushing to your GitHub account an
 
 ## Closing remarks:
 
-I've never created anything with a GUI before. So this was an adventure. Much of PySimpleGUI was definitely simple, but [this link](https://github.com/PySimpleGUI/PySimpleGUI/issues/907) is what helped marry the my pre-UI code to the script I wrote previously. Also I was able to fix my regular expression problem.
+I've never created anything with a GUI before. So this was an adventure. Much of PySimpleGUI was definitely simple, but [this link](https://github.com/PySimpleGUI/PySimpleGUI/issues/907) is what helped marry my pre-UI code to the script I wrote previously. Also I was able to fix my regular expression problem.
+
+## (cont.) 
+
+Well, as ``outcome.mp3`` indicates, this was likely covert cyber bullying in the tech world. The feedback came from women (no one cares) and was contradictory. I was told that I used too many libraries, and that I could have used Natural Language Processing (so more libraries? confusing). But hey, it’s coming from two people, so 🤷‍♀️ plausible deniability. No feedback on my code. Certainly any other book besides Moby Dick could have been chosen, but alas it was.
